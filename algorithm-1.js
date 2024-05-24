@@ -90,3 +90,28 @@ const usingBitWise = (n) => {
 
 console.log(isPowerOfTwo(256));
 console.log(usingBitWise(256));
+
+//Recursive Fibonacci
+function recursiveFinonacci(n) {
+  if (n < 2) {
+    return n;
+  }
+  return recursiveFinonacci(n - 1) + recursiveFinonacci(n - 2);
+}
+
+console.log(recursiveFinonacci(6));
+
+//O(n) = Iterative solution
+//O(2^n) = Recursive solution
+
+//Recursive factorial of a number
+
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+console.log(factorial(4));
+
+//Big(O) = O(n)
